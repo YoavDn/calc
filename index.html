@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <h2>Calculator.</h2>
+    <h3 class="input-text"></h3>
+
+    <table>
+        <tr>
+            <td onclick="updateInputBox(this)">1</td>
+            <td onclick="updateInputBox(this)">2</td>
+            <td onclick="updateInputBox(this)">3</td>
+        </tr>
+            <td onclick="updateInputBox(this)">4</td>
+            <td onclick="updateInputBox(this)">5</td>
+            <td onclick="updateInputBox(this)">6</td>
+        </tr>
+        <td onclick="updateInputBox(this)">7</td>
+        <td onclick="updateInputBox(this)">8</td>
+        <td onclick="updateInputBox(this)">9</td>
+    </tr>
+    <tr>
+        <td onclick="makeCalc(this)">/</td>
+        <td onclick="updateInputBox(this)">0</td>
+        <td onclick="updateInputBox(this)" >.</td>
+        
+    </tr>
+    <tr>
+        <td onclick="makeCalc(this)">+</td>
+        <td onclick="makeCalc(this)">-</td>
+        <td  onclick="makeCalc(this)">*</td>
+        
+    </tr>
+
+    </table>
+    <button onclick="makeCalc(this)" >=</button>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
